@@ -1,0 +1,28 @@
+[project]
+name = "safe-data-for-safe-medication"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.10, <3.12"
+dependencies = [
+    "scipy (>=1.15.0,<2.0.0)",
+    "palettable (==3.3.3)",
+    "scikit-learn (==1.*)",
+    "pandas (==2.3.3)",
+    "configparser (==5.3.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "pyyaml (>=6.0.3,<7.0.0)",
+    "mostlyai (>=5.9.2,<6.0.0)",
+    "anonymeter (>=1.0.0,<2.0.0)",
+    "statsmodels (>=0.14.6,<0.15.0)",
+    "patsy (>=1.0.2,<2.0.0)",
+    "lifelines"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,7 @@
+name: K2
+anonymizationAlgorithm: BEST_EFFORT_BOTTOM_UP
+privacyModelList:
+  - type: k-Anonymity
+    k: 2
+  - type: EqualDistanceTCloseness
+    t: 0.5

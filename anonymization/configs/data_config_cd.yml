@@ -1,0 +1,153 @@
+dataSetName: uc1_context-dependent
+dataCsvFile: {Dataset Path}
+attributeConfigs:
+  - name: PID
+    type: IDENTIFYING_ATTRIBUTE
+    dataType: categorical
+  - name: birth_qtr
+    type: QUASI_IDENTIFYING_ATTRIBUTE
+    dataType: date
+    pathToHierarchy: {Hierarchy Path}
+    useMicroAggregation: true
+    dateFormat: yyyy-MM-dd
+    maxLevelToUse: 2
+  - name: death_max_rdt
+    type: QUASI_IDENTIFYING_ATTRIBUTE
+    dataType: categorical
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 3
+  - name: age
+    type: QUASI_IDENTIFYING_ATTRIBUTE
+    dataType: continuous
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 2
+  - name: index_med
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: fu_end_rdt
+    type: QUASI_IDENTIFYING_ATTRIBUTE
+    dataType: continuous
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 3
+  - name: vte_index_dt
+    type: QUASI_IDENTIFYING_ATTRIBUTE
+    dataType: continuous
+    pathToHierarchy: {Hierarchy Path}
+    useMicroAggregation: true
+    maxLevelToUse: 2
+  - name: baseline_strt_rdt
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: baseline_end_rdt
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: bleeding_fu_end_rdt
+    type: QUASI_IDENTIFYING_ATTRIBUTE
+    dataType: continuous
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 3
+  - name: death_fu_end_rdt
+    type: QUASI_IDENTIFYING_ATTRIBUTE
+    dataType: continuous
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 3
+  - name: fu_bleeding_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: fu_death_flg
+    type: QUASI_IDENTIFYING_ATTRIBUTE
+    dataType: categorical
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 0
+  - name: fu_rec_vte_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_CKD (at least 2 codes)_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Obesity _flg
+    type: QUASI_IDENTIFYING_ATTRIBUTE
+    dataType: categorical
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 0
+  - name: covar_Varicose veins/post-thrombotic syndrome_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Arterial hypertension_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Congestive heart failure_flg
+    type: SENSITIVE_ATTRIBUTE
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 0
+    dataType: categorical
+  - name: covar_MI_flg
+    type: SENSITIVE_ATTRIBUTE
+    dataType: categorical
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 0
+  - name: covar_Stroke_flg
+    type: SENSITIVE_ATTRIBUTE
+    dataType: categorical
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 0
+  - name: covar_Diabetes mellitus_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Moderate/severe liver disease_flg
+    type: SENSITIVE_ATTRIBUTE
+    dataType: categorical
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 0
+  - name: covar_IBD_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Cancer (excl. non-melanoma skin cancer)_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Bleeding_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Fracture_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Major surgery_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Oral contraceptives_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Tamoxifen_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Systemic corticosteroids_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_SSRIs_flg
+    type: SENSITIVE_ATTRIBUTE
+    dataType: categorical
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 0
+  - name: covar_PPIs_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_NSAIDs_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
+  - name: covar_Overall number of non-antithrombotic medication (All drugs excep B01A)
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: continuous
+  - name: covar_Overall number of hospitalizations
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: continuous
+  - name: covar_Number of days of continuous antiplatelet use before cohort entry
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: continuous
+  - name: sex_flg
+    type: QUASI_IDENTIFYING_ATTRIBUTE
+    dataType: categorical
+    pathToHierarchy: {Hierarchy Path}
+    maxLevelToUse: 0
+  - name: oac_flg
+    type: INSENSITIVE_ATTRIBUTE
+    dataType: categorical
