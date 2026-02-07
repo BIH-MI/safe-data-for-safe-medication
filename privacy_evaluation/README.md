@@ -40,3 +40,19 @@ These materials are intended to be:
 - used to structure and compare privacy evaluation outputs across datasets.
 
 They are not intended as a turnkey privacy attack pipeline.
+
+---
+
+## Membership inference
+
+We configured both membership inference frameworks as described in the manuscript:
+
+- Attacker model: Random Forest  
+- Features: Histogram
+- Targets: 10 "average" + 10 "outlier" records per dataset
+  - Targets selected following Halilovic, M., Meurers, T., Otte, K. & Prasser, F. Are You the Outlier? Identifying Targets for Privacy Attacks on Health Datasets. Stud Health Technol Inform 316, 1224–1225 (2024).
+- Sampling / repeats: sample size 500, 10 training + 10 test replicates per run, 30 runs total (≥95% coverage rationale)
+
+Config notes:
+- Shadow-model framework: `nIter=30`, `nShadows=10`, `sizeRawT=sizeSynT=500`, `nSynT=10` (targets passed as a list of target IDs).
+- Phantom: `runCount=30`, `runTrainingCount=10`, `runTestCount=10`, `sizeSampleTraining=sizeSampleTest=500`, `overlap=0.8`.

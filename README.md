@@ -30,7 +30,7 @@ For convenience, the repository includes a small script in `data/` that generate
 We used the ARX de-identification tool:
 
 - Prasser, F., Eicher, J., Spengler, H., Bild, R. & Kuhn, K. A. Flexible data anonymization using ARX—Current status and challenges ahead. Softw: Pract Exper 50, 1277–1304 (2020), https://doi.org/10.1002/spe.2812
-- Project: https://github.com/arx-deidentifier/arx
+- Project: https://github.com/arx-deidentifier/arx (Version 3.9.1)
 
 ### 2.1 Configuration
 In `anonymization/`, we provide YAML files that document our anonymization setup (attribute roles, protected variables, privacy model parameters).  
@@ -64,7 +64,7 @@ We generated synthetic data with MOSTLY AI’s Synthetic-Data SDK:
 - Tiwald P, Krchova I, Sidorenko A, Vieyra MV, Scriminaci M, Platzer M. TabularARGN: A Flexible and Efficient Auto-Regressive Framework for Generating High-Fidelity Synthetic Data 2025.  
 - Sidorenko A, Tiwald P. Privacy-Preserving Tabular Synthetic Data Generation Using TabularARGN 2025.  
 - Platzer M, Reutterer T. Holdout-Based Empirical Assessment of Mixed-Type Synthetic Data. Front Big Data 2021;4:679939. https://doi.org/10.3389/fdata.2021.679939  
-- SDK: https://github.com/mostly-ai/mostlyai
+- SDK: https://github.com/mostly-ai/mostlyai (Version 0.4.0)
 
 Our synthesis setup:
 - We used the default SDK configuration
